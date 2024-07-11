@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #CEF6F5 !important;
+    }
+    .bg-primary {
+      background-color: #FE2EF7 !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #0A2229	  !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #00FFFF	  !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #0A2229 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">일본 여행 가이드 - 10309 박준현</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>일본은 태평양에 위치한 동아시아의 섬나라이다. 대한민국, 조선민주주의인민공화국, 중화인민공화국, 러시아에 접한 동해 동쪽에 위치해 있다. 일본의 국호는 한자로 '태양이 떠오르는 곳'이라는 의미이다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 --> 
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 --> 
+            <img src="images/일본 국기.PNG" class="d-block w-100" alt="일본 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/일본 개요.jpg" class="d-block w-100" alt="일본 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/스시.jpg" class="d-block w-100" alt="일본 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/라멘.jpg" class="d-block w-100" alt="일본 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/ㅇ.jpg" class="d-block w-100" alt="일본 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/japan_history1.jpeg" alt="일본 역사 1" class="img-fluid">
+            <p>구석기 시대</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/아.jpg" alt="일본 역사 2" class="img-fluid">
+            <p>고훈 시대</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/japan_history3.jpeg" alt="일본 역사 3" class="img-fluid">
+            <p>쇼화 시대</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/역사.jpg" alt="일본 역사 1" class="img-fluid">
+          <p>구석기 시대 일본은 빙하기로 인해 한반도 및 타이완, 남중국과 육지로 연결되어 있었으며, 그 시기에 인류가 일본에 첫 발을 딛었다. 이후 해수면이 상승하면서 일본은 섬이 되었고, 일본 열도가 되었다.
+
+일본의 구석기 시대는 약 12만 년 전에 시작했다.[1] 그 시기의 유물과 화석인류는 그다지 많이 남지 않았는데, 일본은 판 경계 특성상 지각 변동이 심하다는 점, 산성 화성암 토양이기 때문에 유골이 남기 어렵다는 점이 이유로 꼽힌다.[2] 그래도 아예 없지는 않고, 드문드문 발견되는 수준.
+
+시즈오카의 화석인류인 하마키타(浜北)인, 1946년 발견된 군마의 이와주쿠(岩宿) 구석기 유적이 유명하다.[3] 1946년까지는 일본 열도에는 구석기 문화가 존재하지 않았던 것으로 여겨졌으나, 이와주쿠에서 타제석기 유적이 발견됨으로써 일본 구석기 문화의 존재가 세상에 알려졌다.
+
+일본의 신석기 시대인 조몬 시대는 길게 보면 기원전 1만 년 경까지 거슬러 올라가지만, 청동기시대와 철기시대는 기원전 400년경을 전후로 한반도에서 유입한 도래인으로부터 급격하게 시작되었다. 도래인이 중심이 되어 시작한 기원전 400년 경부터 기원후 3세기까지의 시기를 야요이 시대라고 한다.
+
+긴 세월동안 원시 수렵 채집 생활만을 반복하고 있었던 조몬인과는 달리 야요이인은 한 단계 더 발전한 문명인 농경 문화, 금속 제련 기술을 보유한채로 일본 열도에 진출했고, 그들에 의해 일본 열도는 단기간에 매우 급격한 변화를 맞이하게 됐다. 또한, 도래인 계통의 야요이인은 현대 일본인의 혈통 비율에서 87%~96.7%를 차지한다고 한다.[4]
+
+이후, 기타큐슈와 혼슈 서부 및 남부[5]를 중심으로 소국들이 세워졌으며, 이합집산을 거쳐 4세기 경에는 현재의 나라현에서 미약하게나마 중앙 집권적인 체제를 갖춘 야마토 왕권이 등장하였고, 주변 소국들을 하나하나 복속시키며 외교력을 행사하기 시작하였다. 이 시기를 고훈 시대(古墳時代)라고 한다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/역사.GIF" alt="일본 역사 2" class="img-fluid">
+          <p>고훈 시대(일본어: 古墳時代 고훈지다이[*])는 고고학적 일본사 시대 구분으로, 전방후원분이 성행한 시기인 3세기 중반부터 7세기 말까지의 약 400년을 가리킨다. 야요이 시대의 뒤를 이었으며, 아스카 시대로 이어진다. 3세기 이후 도래인의 유입은 드물어지다가,[1] :19 3세기 후반부터 호족의 연합정권인 야마토 정권이 일본 통일을 시작하면서, 새로운 지배자의 권위의 상징으로서 각지에 고분(고훈)이 축조되었다.
+
+대외관계에서는 4세기 이후 한반도에 진출하여 고구려와 싸웠다는 광개토대왕릉비가 전해진다. 5세기에는 왜5왕이 중국에 사자를 보냈다. 왜가 한반도에서 얻은 철자원은 갑옷, 무기, 농기구, 공구 등에 사용되었다. 백제를 통해 대륙으로부터 문자(한자)와 불교를 수입하였다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/쇼화.GIF" alt="일본 역사 3" class="img-fluid">
+          <p>쇼와 시대(일본어: 昭和時代 쇼와지다이[*])는 20세기 일본의 연호의 하나로, 쇼와 천황의 재임기간에 해당하는 1926년 12월 25일부터 1989년 1월 7일까지로, 일본 역사상 최장수 연호로 기록되었다. 쇼와(昭和)는 《서경》(書經) 〈요전〉(堯典)(1장)의 백성소명 협화만방(百姓昭明 協和萬邦, 백성이 밝고 똑똑해져 만방을 화평하게 하다.)[1]에서 따온 글자이다.
+
+명목상은 1926년부터 1989년까지로 되어 있으나, 쇼와 원년 (1926년)은 연말 7일 정도에 불과하기 때문에, 실질적으로는 쇼와는 "2년"(1927년)에서 시작한다.
+
+정치, 경제, 외교, 문화 등을 보면 제2차 세계 대전, 태평양전쟁을 일으킨후 패전하여 1945년 9월 2일 포츠담 선언 서명(제2차 세계 대전 종전) 또는 1947년 5월 3일 일본국 헌법의 시행을 계기로 하여 국가는 전혀 다르다. 1945년 이전의 쇼와 시대(1927년 ~ 1945년)는 천황을 기축으로 하는 파시즘 시대의 "일본 제국"이며 일본 제국이 해체된 1945년 이후의 쇼와 시대(1945년 ~ 1989년)는 일본국 헌법과 미일 안보 조약을 기축으로 하는 냉전 시대의 "일본국"이다.
+
+일본 제국의 쇼와 시대에는 현대 사조(思潮) 중에 천황제에 위배되는 문제가 있는지 검열이 행해졌으며, 위배된다고 판단되면 대개는 삭제되었다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/디즈니.jpg" alt="일본 관광지 1" class="img-fluid">
+            <p>도쿄 디즈니 리조트</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/오키.jpg" alt="일본 관광지 2" class="img-fluid">
+            <p>오키나와</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/후쿠오카.jpg" alt="일본 관광지 3" class="img-fluid">
+            <p>후쿠오카</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction1.jpeg" alt="일본 관광지 1" class="img-fluid">
+          <p>1983년 4월 15일에 개장한 디즈니 리조트. 도쿄 디즈니 리조트라고 하지만, 실제로는 치바현 우라야스시에 있다. 최초로 미국 외 국가에 세워진 디즈니 리조트이다. 아시아에서 방문객이 가장 많은 테마파크로 연간 방문자 수가 2022년 기준 2,210만명에 달한다. 파크 개장과 동시에 문을 연 도쿄 디즈니랜드와 2001년에 개장한 도쿄 디즈니씨, 주변의 디즈니 호텔과 도쿄 디즈니 리조트 오피셜 호텔, 그리고 마이하마 리조트라인 등 다양한 부대시설이 함께 대규모 리조트를 이루고 있다.
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction2.jpeg" alt="일본 관광지 2" class="img-fluid">
+          <p>오키나와섬은 류큐 열도 중부에 위치한 섬으로, 류큐 열도의 섬들 중 가장 넓다. 면적은 1206.98㎢로 한국에서 가장 큰 섬 제주도(1850.2㎢)의 약 2/3 크기고 한국에서 2번째로 큰 거제도(379.5㎢)의 3배보다 약간 크며 일본에서 본섬인 홋카이도, 혼슈, 시코쿠, 규슈 4개 섬을 제외하면 가장 큰 섬이다.[1]
+
+류큐 왕국의 유산이나 독특한 문화 등이 남아있고, 이외에도 아열대지역의 자연풍경 등 볼거리가 많아 관광지로 인기가 많은 지역이다. 한편 2차 대전 당시 오키나와 전투의 아픔을 간직한 곳이기도 하며, 주일미군 기지 문제로 골머리를 앓고 있는 중이다.</p>
+        </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction3.jpeg" alt="일본 관광지 3" class="img-fluid">
+          <p>일본 후쿠오카현 중서부에 위치한 시. 후쿠오카현청 소재지이자 후쿠오카현, 더 나아가 규슈의 최대도시이다. 대한민국과 220km 거리로 지리상 가장 가까운 일본의 대도시다. 인구는 163만 명으로 일본 전체 6위.[2][3] 후쿠오카시 경계선 밖으로도 주변의 여러 시군[4]과 시가지가 쭉 이어져있어 실제 도시권 인구는 좁게 잡아도 200만을 훨씬 넘는다. 한국의 부산광역시와는 1988년에 자매결연을 맺은 도시이기도 하다.
+.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (3월~5월)과 가을 (9월~11월).</li>
+        <li>언어: 일본어. 주요 도시에서는 영어도 사용되지만, 기본적인 일본어 구문을 배우면 도움이 됩니다.</li>
+        <li>통화: 일본 엔 (JPY).</li>
+        <li>교통: 일본은 기차, 버스, 지하철 등 광범위한 교통망을 자랑합니다. JR 패스는 장거리 여행에 매우 유용합니다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 --><iframe width="560" height="315" src="https://www.youtube.com/embed/fgT8QRAYqaw?si=SczSH3kGGi4f-d9L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>		</div>
+    </div>
+
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 일본 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
